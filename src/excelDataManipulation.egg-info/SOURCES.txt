@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 setup.cfg
 src/excelDataManipulation/ConvertData.py
+src/excelDataManipulation/main.py
 src/excelDataManipulation.egg-info/PKG-INFO
 src/excelDataManipulation.egg-info/SOURCES.txt
 src/excelDataManipulation.egg-info/dependency_links.txt

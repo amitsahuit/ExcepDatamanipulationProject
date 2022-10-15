@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: excelDataManipulation
+Version: 0.0.1
+Summary: This util is for converting to read input_refresh_template sheet of provided excel (Analytics Template for Exercise.xlsx) and generate the output file as shown in output_31_days_report sheet
+Home-page: https://github.com/amitsahuit
+Author: Amit Sahu
+Author-email: amitsahuit@gmail.com
+Project-URL: Bug Tracker, https://github.com/amitsahuit
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## There are 2 ways to setup this project
+
+## 1. create venv and install packages from requirements.txt file and rum main.py file.
+```
+git init
+git clone 
+py -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+py main.py
+```
+
+## 2. Direct whl file installation and import module in main.py and execute
+```
+pip install excelDataManipulation-0.0.1-py3-none-any.whl
+py main.py
+```
+
+

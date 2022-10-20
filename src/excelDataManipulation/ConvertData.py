@@ -7,10 +7,9 @@ def convertData(inputFile, outputFile):
 
     # Delete duplicate columns
     df = df.drop_duplicates()
-
+    
     # Rename axis
     df = df.rename_axis(columns=['Date', None], index='Site ID')
-
 
     # Pivot your dataframe
     df = df.stack(level='Date').reset_index()
@@ -18,6 +17,10 @@ def convertData(inputFile, outputFile):
     # print the values
     print(df)
 
+    #delete unwanted rows
+    df.dropna(axis=0,how='any',subset=None,inplace=True)
+    
     # Save value to excel
     df.to_excel(outputFile, sheet_name = 'output_31_days_report')
+
 
